@@ -1,27 +1,46 @@
-# Angular8FirebaseStorage
+https://loizenai.com/angular-11-upload-file-to-firebase-storage/
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.0-rc.2.
+# @angular/fire/storage Angular 11 Upload files to Firebase
 
-## Development server
+## Technologies – Angular 11 Upload File to Firebase Storage
+– Angular 11
+– RxJs 6
+– @angular/fire 5.1.3
+– firebase 5.11.1
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Overview Angular 11 Upload file to Firebase Storage
 
-## Code scaffolding
+![Overview Angular 11 Upload file to Firebase Storage](https://loizenai.com/wp-content/uploads/2020/12/Angular-11-Upload-Files-to-Firebase-Storage-Demo.png)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+We will build an Angular 11 Firebase App that can:
+– helps user choose file from local and upload it to Firebase Storage
+– show progress with percentage
+– save file metadata to Firebase Realtime Database
+(Functions above from the posts: Upload File to Storage)
+– get list Files and display
 
-## Build
+## How to upload file from Angular to Firebase storage using @angular/fire/storage?
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+![How to upload file from Angular to Firebase storage using @angular/fire/storage?](https://loizenai.com/wp-content/uploads/2020/12/Angular-11-Upload-Files-to-Firebase-Storage-Overview.png)
 
-## Running unit tests
+– Upload file:
++ save file to Firebase Cloud Storage
++ retrieve {name, url} of the file from Firebase Cloud Storage
++ save {name, url} to Firebase Realtime Database
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+– Get/delete files: use file {name, url} stored in Database as reference to Firebase Cloud Storage.
 
-## Running end-to-end tests
+So, after upload process, the results will be like:
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+-> Firebase Storage:
 
-## Further help
+![Firebase Storage](https://loizenai.com/wp-content/uploads/2020/12/Angular-11-Firebase-Storage-Results.png)
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+-> Firebase Realtime Database:
+
+![Firebase Realtime Database](https://loizenai.com/wp-content/uploads/2020/12/Angular-11-Firebase-Storage-Database-Results.png)
+
+## Related post
+
+- [Reactjs CRUD Firebase Realtime Database Example](https://loizenai.com/reactjs-crud-firebase-realtime-database/)
+- [Angular 10 CRUD Firebase Realtime Database – use @angular/fire](https://loizenai.com/angular-10-crud-firebase-realtime-database-angular-fire/)
